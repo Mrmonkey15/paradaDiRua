@@ -1,0 +1,26 @@
+:root {
+    --spacing-xs: 0.5rem;   /* Extra pequeno */
+    --spacing-sm: 1rem;     /* Pequeno */
+    --spacing-md: 1.5rem;   /* Médio */
+    --spacing-lg: 2rem;     /* Grande */
+    --spacing-xl: 3rem;     /* Extra grande */
+    --primary-color: #000;  
+    --secundary-color:#E58124;
+    --tertiary-color: #FDEFD5;
+  }
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-sm);
+    height: 10vh;
+    background-color: var(--primary-color);
+}
+.iconHeader{
+    color: #FFFBF4;
+    font-size: var(--spacing-xl)
+}
+.logo{
+    height: 100%;
+}
