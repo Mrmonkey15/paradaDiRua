@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Angkor&family=Arbutus&family=Arbutus+Slab&display=swap');
+
+
 :root {
     --spacing-xs: 0.5rem;   /* Extra pequeno */
     --spacing-sm: 1rem;     /* Pequeno */
@@ -6,9 +10,14 @@
     --spacing-xl: 3rem;     /* Extra grande */
     --primary-color: #000;  
     --secundary-color:#E58124;
-    --tertiary-color: #FDEFD5;
+    --tertiary-color: #FFFBF4;
   }
-
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
 header{
     display: flex;
     justify-content: space-between;
@@ -18,9 +27,125 @@ header{
     background-color: var(--primary-color);
 }
 .iconHeader{
-    color: #FFFBF4;
+    color: var(--tertiary-color);
     font-size: var(--spacing-xl)
 }
 .logo{
     height: 100%;
+}
+
+.heroBanner{
+    background-image: url(/imgs/heroBannerIMG.webp);
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    border-top: 1px solid white;
+}
+
+.hero__description{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    justify-content: end;
+    background: rgba(19, 19, 19, 0.6);
+    align-items: center;
+    text-align: center;
+    padding: var(--spacing-xs);
+    
+}
+.hero__description h1{
+    font-family: 'arbutus slab';
+    font-size: 20px;
+    color: var(--tertiary-color);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);    
+    margin: 0;
+    
+}
+.btn-default{
+    background-color: var(--primary-color);
+    padding: var(--spacing-sm);
+    text-decoration: none;
+    border-radius: 20px;
+    color: var(--secundary-color);
+    font-family: 'angkor';
+    outline: 1px solid var(--secundary-color);
+}
+.btn-default:hover{
+    background-color: var(--secundary-color);
+    color: var(--primary-color);
+
+}
+
+.simpleDivision{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--tertiary-color);
+    height: 16vh;
+    border-top: 1px solid white
+}
+.simpleDivision h1 {
+    font-family: 'arbutus';
+    color: var(--tertiary-color);
+    font-size: var(--spacing-md);
+    letter-spacing: 2px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);    
+}
+.menu__container{
+    background-color:var(--primary-color);
+    display: flex;
+    width: 100%;
+    /* height: 25vh; */
+
+    gap: var(--spacing-sm);
+}
+.container__img, .menu__description{
+    flex: 1 ;
+}
+.container__img{
+display: flex;
+justify-content: center;
+padding: var(--spacing-sm);
+}
+.container__img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+
+}
+.menu__description{
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-sm);
+    gap: 1rem;
+    align-items: center;
+    color: var(--tertiary-color);
+
+}
+
+.menu__description p, .menu__description h2{
+    max-width: 100%;
+    margin: 0
+}
+.menu__description h2 {
+    color: #E58124;
+    text-align: center;
+    font-family: 'arbutus';
+}
+.menu__description p {
+    text-align: justify;
+    font-family: 'arbutus slab';
+}
+.btn-secundary {
+    background-color: var(--secundary-color);
+    color: var(--primary-color);
+}
+.btn-secundary:hover {
+    background-color: var(--primary-color);
+    color: var(--secundary-color);
 }
