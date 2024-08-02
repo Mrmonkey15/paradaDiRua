@@ -12,11 +12,15 @@
     --secundary-color:#E58124;
     --tertiary-color: #FFFBF4;
   }
+h1, h2,h3,p{
+    margin:0
+}  
 body{
     margin: 0;
     padding: 0;
     border: 0;
     box-sizing: border-box;
+    font-family: 'arbutus slab';
 }
 header{
     display: flex;
@@ -33,7 +37,6 @@ header{
 .logo{
     height: 100%;
 }
-
 .heroBanner{
     background-image: url(/imgs/heroBannerIMG.webp);
     height: 50vh;
@@ -44,11 +47,10 @@ header{
     justify-content: end;
     border-top: 1px solid white;
 }
-
 .hero__description{
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-xs);
+    gap: var(--spacing-sm);
     justify-content: end;
     background: rgba(19, 19, 19, 0.6);
     align-items: center;
@@ -72,6 +74,8 @@ header{
     color: var(--secundary-color);
     font-family: 'angkor';
     outline: 1px solid var(--secundary-color);
+    text-align: center;
+    text-indent: 0px;
 }
 .btn-default:hover{
     background-color: var(--secundary-color);
@@ -98,7 +102,7 @@ header{
 .menu__container{
     background-color:var(--primary-color);
     display: flex;
-    width: 100%;
+    width: 100vw;
     /* height: 25vh; */
 
     gap: var(--spacing-sm);
@@ -125,9 +129,9 @@ padding: var(--spacing-sm);
     gap: 1rem;
     align-items: center;
     color: var(--tertiary-color);
+    text-indent: 10px;
 
 }
-
 .menu__description p, .menu__description h2{
     max-width: 100%;
     margin: 0
@@ -138,14 +142,67 @@ padding: var(--spacing-sm);
     font-family: 'arbutus';
 }
 .menu__description p {
+    text-indent: 10px;
     text-align: justify;
     font-family: 'arbutus slab';
 }
 .btn-secundary {
     background-color: var(--secundary-color);
     color: var(--primary-color);
+ 
 }
 .btn-secundary:hover {
     background-color: var(--primary-color);
     color: var(--secundary-color);
 }
+#menu__completed{
+    display: inline-block;
+    margin: 0 auto;
+    padding: var(--spacing-md);
+    font-size: var(--spacing-md);
+    text-align: center;
+    width: 100%;
+    color: var(--secundary-color);
+    background-color: #000;
+    font-family: 'arbutus';
+    box-sizing: border-box;
+}
+#menu__completed:hover{
+    color: var(--tertiary-color);
+    font-size: var(--spacing-xl);
+    transition: font-size 0.3s ease;
+}
+.about-us{
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.about__content{
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    margin: 0px;
+    padding: 0px, 1rem;
+    justify-content: space-evenly;
+    color: var(--tertiary-color);
+}
+.about__content h1{
+margin: 0px;
+font-family: 'arbutus';
+text-align: center;
+}
+.about__content p{
+    margin: 0px;
+    text-indent: 10px;
+    text-align: justify;
+    padding: var(--spacing-sm);
+}
+.imgContainer__about img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1
