@@ -5,13 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parada di Rua - O melhor lanche di rua da região</title>
     <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/paradaDiRua/css/style.css">
 </head>
 <body>
+    <!-- sidebar -->
+    <div class="sidebar">
+        <i class="fa-solid fa-arrow-left back-icon" onclick="goBack()"></i>
+        <ul id="sidebar__menu">
+            <li><a href="" class="footer-item">Peça online</a></li>
+            <li><a href="" class="footer-item">Cardápio</a></li>
+            <li><a href="" class="footer-item">Contato</a></li>
+        </ul>
+        <div class="sidebar__img">
+            <img src="/paradaDiRua/imgs/logoparadaOficial.svg" alt="logo oficial parada di rua" class="logoIMG-sidebar">
+        </div>
+        <div class="socialMedia">
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </div>
+    <!-- fim -->
     <header>
-        <img src="/imgs/logoparadaOficial.svg" alt="logo oficial parada di rua" class="logo">   
-        <i class="fa-sharp fa-solid fa-burger iconHeader"></i>
+        <i class="fa-sharp fa-solid fa-burger iconHeader" id="burgerMenuIcon"></i>
+        <img src="/paradaDiRua/imgs/logoparadaOficial.svg" alt="logo oficial parada di rua" class="logo">    
     </header>
+    
     <main>
         <section class="heroBanner">
             <article class="hero__description">
@@ -90,9 +109,9 @@
         <img src="/imgs/logoparadaOficial.svg" alt="logo oficial parada di rua" class="logoIMG"> 
   
         <ul id="footer__menu">
-            <li><a href="" class="footer-item">Peça online</a></li>
-            <li><a href=""class="footer-item">Cardápio</a></li>
-            <li><a href=""class="footer-item">Fale Conosco</a></li>
+            <li><a href="" class="footer-item header-item">Peça online</a></li>
+            <li><a href=""class="footer-item header-item">Cardápio</a></li>
+            <li><a href=""class="footer-item header-item">Fale Conosco</a></li>
         </ul>
         <div class="socialMedia">
             <i class="fa-brands fa-whatsapp"></i>
@@ -101,24 +120,6 @@
         </div>
     </footer>
     <span id="dev">Desenvolvido por: 504dev</span>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <script src="/js/main.js"></script> 
 <script src="https://kit.fontawesome.com/04394fbfdb.js" crossorigin="anonymous"></script>   
