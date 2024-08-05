@@ -31,11 +31,15 @@ header{
     height: 10vh;
     background-color: var(--primary-color);
 }
+#burgerMenuIcon{
+    background-color: #000;
+    border: 0;
+}
 /* side bar */
 
 .sidebar {
     position: fixed;
-    /* transform: translateX(-250px); */
+    transform: translateX(-250px);
     transition: transform 0.3s ease;
     background-color: black;
     height: 100vh;
@@ -157,8 +161,6 @@ header{
     background-color:var(--primary-color);
     display: flex;
     width: 100vw;
-    /* height: 25vh; */
-
     gap: var(--spacing-sm);
 }
 .container__img, .menu__description{
