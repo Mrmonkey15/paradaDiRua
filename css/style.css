@@ -22,6 +22,16 @@ body{
     box-sizing: border-box;
     font-family: 'arbutus slab';
     width: 100%;
+    background-color: black;
+    max-width: 1200px;
+    margin: 0 auto;
+  
+
+}
+
+
+.desktopMenu{
+    display: none;
 }
 header{
     display: flex;
@@ -30,6 +40,8 @@ header{
     padding: var(--spacing-sm);
     height: 10vh;
     background-color: var(--primary-color);
+    max-width: 1200px;
+    margin: 0 auto;
 }
 #burgerMenuIcon{
     background-color: #000;
@@ -39,7 +51,7 @@ header{
 
 .sidebar {
     position: fixed;
-    transform: translateX(-250px);
+    transform: translateX(-500px);
     transition: transform 0.3s ease;
     background-color: black;
     height: 100vh;
@@ -49,8 +61,14 @@ header{
     padding: var(--spacing-sm);
     box-sizing: border-box;
     justify-content: space-between;
+    
  
 }
+
+.sidebar.open {
+    transform: translateX(0);
+}
+
 .sidebar__img{
     display: flex;
     flex-direction: column;
@@ -60,16 +78,21 @@ header{
     display: flex;
     flex-direction: column;
     gap: var(--spacing-md);
-    background-color: rgb(24, 24, 24);
+    background-color:black;
     list-style-type: none;
     padding: 0;
     margin: 0;
     align-items: center;
     font-size: var(--spacing-md);
 }
+
 .header-item{
     text-align: center;
+    color: var(--tertiary-color);
+    text-decoration: none;
+    font-size: var(--spacing-md);
 }
+
 .socialMedia {
     color: #fffbf4a4;
     display: flex;
@@ -80,7 +103,7 @@ header{
     max-width: 50%;
 }
 .back-icon {
-    color: #fffbf4a4;
+    color: var(--tertiary-color);
     font-size: 2rem;
     cursor: pointer;
     margin: var(--spacing-sm)
@@ -95,7 +118,7 @@ header{
 }
 .heroBanner{
     /* usar este no gitpages background-image: url('../imgs/heroBannerIMG.webp'); */
-    background-image: url(/imgs//heroBannerIMG.webp);
+    background-image: url(/paradaDiRua/imgs/heroBannerIMG.webp);
     height: 50vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -137,6 +160,8 @@ header{
 .btn-default:hover{
     background-color: var(--secundary-color);
     color: var(--primary-color);
+    transform: translatey(-10px);
+    transition: transform 0.3s ease;
 
 }
 
@@ -267,7 +292,7 @@ padding: var(--spacing-sm);
     color: var(--tertiary-color);
     background-color: var(--primary-color);
 }
-.delivey__icons{
+.delivery__icons{
     display: flex;
     flex-direction: column;
     gap: var(--spacing-sm);
@@ -335,8 +360,95 @@ footer{
     display: inline-block;
     background-color: rgba(163, 161, 161, 0.5);
     width: 100vw;
+    max-width: 1200px;
     text-align: center;
     padding: 3px;
     color: #000000a1;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@media (min-width: 700px){
+    body{
+        font-size: var(--spacing-md);
+    }
+    .sidebar, #burgerMenuIcon {
+        display: none;
+    }
+    .desktopMenu{
+        display: flex;
+        justify-content: right;
+        gap: 2rem;
+        font-family: 'arbutus';
+    }
+
+    .menu__item{
+        color: var(--tertiary-color);
+        text-decoration: none;
+        font-size: var(--spacing-md);    
+    }
+    .menu__item:hover{
+        color: var(--secundary-color);
+        transform: translateY(-5px);
+        transition: transform 0.3s ease;
+        
+    }
+    header {
+        padding: var(--spacing-md);
+        width: 100%;
+    }
+    .heroBanner{
+        height: 70vh;
+    }
+    .hero__description{
+        height: 13vh;
+    }
+    .simpleDivision{
+        border-bottom: 1px solid white;
+    }
+    .menu__container{
+        padding: var(--spacing-sm);
+        width: auto;
+    }
+    .menu__description{
+        gap: var(--spacing-xl);
+    }
+    #menu__completed{
+        text-align: right;
+        padding: var(--spacing-lg);
+    }
+    .about__content{
+        height: 70vh;
+        justify-content: space-evenly;
+
+    }
+    .about__content p{
+       padding:0 2rem;
+    }
+    .delivery{
+        padding: var(--spacing-md);
+    }
+    .delivery h1, .location h1, .about__content h1  {
+        font-size: 3rem;
+    }
+    .location{
+        height: 40vh;
+        padding: 2rem;
+        justify-content: space-evenly;
+    }
+    .location p{
+        text-align: center;
+    }
+}
+@media (min-width: 1200px){
+    .heroBanner{
+        height: 100vh;
+    }
+    .hero__description{
+        height: 15vh;
+        gap: var(--spacing-lg);
+    }
+    .delivery__icons{
+        flex-direction: row;
+        gap: 2rem   ;
+    }
 }

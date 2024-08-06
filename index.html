@@ -10,11 +10,11 @@
 <body>
     <!-- sidebar -->
     <div class="sidebar">
-        <i class="fa-solid fa-arrow-left back-icon" onclick="goBack()"></i>
+        <i class="fa-solid fa-arrow-left back-icon" id="closebtn"></i>
         <ul id="sidebar__menu">
-            <li><a href="" class="footer-item">Peça online</a></li>
-            <li><a href="" class="footer-item">Cardápio</a></li>
-            <li><a href="" class="footer-item">Contato</a></li>
+            <li><a href="" class="header-item">Peça Aqui</a></li>
+            <li><a href="" class="header-item">Cardápio</a></li>
+            <li><a href="" class="header-item">Contato</a></li>
         </ul>
         <div class="sidebar__img">
             <img src="/paradaDiRua/imgs/logoparadaOficial.svg" alt="logo oficial parada di rua" class="logoIMG-sidebar">
@@ -26,9 +26,16 @@
         </div>
     </div>
     <!-- fim -->
+     
     <header>
         <button id="burgerMenuIcon"> <i class="fa-sharp fa-solid fa-burger iconHeader"></i></button>
-        <img src="/paradaDiRua/imgs/logoparadaOficial.svg" alt="logo oficial parada di rua" class="logo">    
+        <img src="/paradaDiRua/imgs/logoparadaOficial.svg" alt="logo oficial parada di rua" class="logo">  
+        <nav class="desktopMenu">
+            <a href="" class="menu__item">Peça Aqui</a>
+            <a href="" class="menu__item">Cardápio</a>
+            <a href="" class="menu__item"> Contato</a>
+        </nav>
+   
     </header>
     
     <main>
@@ -45,7 +52,7 @@
             <!-- primeiro item do menu -->
             <article class="menu__container">
                 <div class="container__img">
-                    <img src="/imgs/supremeCheedar.webp" alt="">
+                    <img src="/paradadirua/imgs/supremeCheedar.webp" alt="">
                 </div> 
                 <div class="menu__description">
                     <h2>Cheedar Supreme</h2>
@@ -56,7 +63,7 @@
           <!-- segundo item do menu-->
           <article class="menu__container">
             <div class="container__img">
-                <img src="/imgs/chicken.webp" alt="">
+                <img src="/paradadirua/imgs/chicken.webp" alt="">
             </div> 
             <div class="menu__description">
                 <h2>Crispy Chicken</h2>
@@ -67,7 +74,7 @@
           <!-- terceiro item do menu -->
           <article class="menu__container">
             <div class="container__img">
-                <img src="/imgs/hotdogParada.webp" alt="">
+                <img src="/paradadirua/imgs/hotdogParada.webp" alt="">
             </div> 
             <div class="menu__description">
                 <h2>Pão c/ Linguiça</h2>
@@ -84,15 +91,15 @@
                 <p>Feitos com ingredientes frescos e de qualidade, nossos lanches artesanais têm um sabor único e incomparável. Desde 2017, o Parada Di Rua busca oferecer a melhor experiência aos nossos clientes, através de um excelente atendimento e um lanche extremamente saboroso... É uma experiência de sabor que você não pode perder!</p>
             </article>
             <div class="imgContainer__about">
-                <img src="/imgs/aboutUsImg.webp" alt="">
+                <img src="/paradadirua/imgs/aboutUsImg.webp" alt="">
             </div>
         </section>
         <section class="delivery">
             <h1 class="title">Delivery</h1>
-            <div class="delivey__icons">
-                <img src="/imgs/Hamburger.svg" alt="">
-                <img src="/imgs/Motorcycle Delivery Single Box.svg">
-                <img src="/imgs/Happy.svg">
+            <div class="delivery__icons">
+                <img src="/paradadirua/imgs/Hamburger.svg" alt="">
+                <img src="/paradadirua/imgs/Motorcycle Delivery Single Box.svg">
+                <img src="/paradadirua/imgs/Happy.svg">
             </div>
             <p> Peça agora o seu lanche através do nosso delivery e descubra o prazer do verdadeiro lanche de rua no conforto da sua casa. </p>
             <a href="" class="btn-default btn-secundary"> Pedir no WhatsApp <i class="fa-brands fa-whatsapp"></i></a>
@@ -106,12 +113,12 @@
     </main>
     <footer>
   
-        <img src="/imgs/logoparadaOficial.svg" alt="logo oficial parada di rua" class="logoIMG"> 
+        <img src="/paradadirua/imgs/logoparadaOficial.svg" alt="logo oficial parada di rua" class="logoIMG"> 
   
-        <ul id="footer__menu">
-            <li><a href="" class="footer-item header-item">Peça online</a></li>
-            <li><a href=""class="footer-item header-item">Cardápio</a></li>
-            <li><a href=""class="footer-item header-item">Fale Conosco</a></li>
+        <ul id="footer__menu" >
+            <li><a href="" class="footer-item">Peça Aqui</a></li>
+            <li><a href=""class="footer-item">Cardápio</a></li>
+            <li><a href=""class="footer-item">Fale Conosco</a></li>
         </ul>
         <div class="socialMedia">
             <i class="fa-brands fa-whatsapp"></i>
@@ -121,7 +128,8 @@
     </footer>
     <span id="dev">Desenvolvido por: 504dev</span>
 
-<script src="/js/main.js"></script> 
+<script src="/paradaDiRua/js/main.js"></script> 
 <script src="https://kit.fontawesome.com/04394fbfdb.js" crossorigin="anonymous"></script>   
 </body>
+
 </html>
