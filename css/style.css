@@ -67,6 +67,28 @@ body{
     0%, 100% { transform: translateX(0); }
     40%, 80% { transform: translateX(5px); }
 }
+.whatsapp-button .tooltip {
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 8px;
+    position: absolute;
+    bottom: 70px; /* Ajuste conforme necessário */
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-button a:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
 .desktopMenu{
     display: none;
 }
