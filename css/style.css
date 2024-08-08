@@ -154,7 +154,7 @@ header{
     height: 100%;
 }
 .heroBanner{
-    background-image: url('../imgs/heroBannerIMG.jpg');
+    background-image: url('../imgs/heroBannerIMG.webp');
     height: 50vh;
     background-size: cover;
     background-repeat: no-repeat;
