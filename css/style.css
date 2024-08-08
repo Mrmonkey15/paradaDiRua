@@ -58,10 +58,7 @@ body{
     height: 40px;
     
 }
-.whatsapp-button a:hover {
-    animation: shake 0.5s;
-    animation-iteration-count: infinite;
-}
+
 
 @keyframes shake {
     0%, 100% { transform: translateX(0); }
@@ -157,7 +154,6 @@ header{
     height: 100%;
 }
 .heroBanner{
-    /* usar este no gitpages background-image: url('../imgs/heroBannerIMG.webp'); */
     background-image: url('../imgs/heroBannerIMG.webp');
     height: 50vh;
     background-size: cover;
